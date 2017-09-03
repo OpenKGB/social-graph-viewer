@@ -6,11 +6,20 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<script src="viewer.js"/>
+
+<script src="d3.layout.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<!--
+for some obscure reason newer version of D3 wouldn't work. It fails with cannot find "bind" property/method.
+Smth to investigate for future. v3 works fine
+<script src="https://d3js.org/d3.v4.min.js"></script>
+-->
+<script src="viewer.js"></script>
 
 <div>drag to rearrange these nodes,then click
     <button onclick="return refresh();">refresh data</button> Some nodes will be replaced.
 </div>
+
 
 </body>
 </html>
