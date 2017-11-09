@@ -280,7 +280,19 @@ function graph(d3) {
             })
             //.append("rect") //make nodes as rectangles OR:
             .append("circle").attr('r',50) //make nodes as circles
-            .attr('class', 'nodebox')
+            .attr('class', function (d) {
+                var genderClass = "";
+                if(d.hasOwnProperty('gender')){
+                    if(d.gender == "f"){
+                        genderClass = " gender_f";
+                    }
+                    if(d.gender == "m"){
+                        genderClass = " gender_m";
+                    }
+                }
+
+                return "nodebox" + genderClass;
+            })
             .attr("x", -boxWidth / 2)
             .attr("y", -boxHeight / 2)
             .attr("width", boxWidth)
