@@ -12,6 +12,7 @@ function chart_data() {
             //     [7293, 1224],
             //     [7293, 1224]
             // ],
+            gender: "m",
             ref: [{
                 from: 0,
                 to: 1,
@@ -36,8 +37,9 @@ function chart_data() {
         },
         "1": {
             id: 1,
-            name: "Robert Miller",
+            name: "Joan of Arc",
             load: Math.random(),
+            gender: "f",
             confusionmatrix: [
                 [7293, 1224],
                 [7293, 1224]
@@ -51,6 +53,7 @@ function chart_data() {
         "2": {
             id: 2,
             name: "William Taylor",
+            gender: "m",
             load: Math.random(),
             confusionmatrix: [
                 [7293, 1224],
@@ -131,6 +134,7 @@ function refreshed_data() {
         "0": {
             id: 0,
             name: "systemA",
+            gender: "m",
             load: Math.random(),
             confusionmatrix: [
                 [7293, 1224],
@@ -165,6 +169,7 @@ function refreshed_data() {
         "1": {
             id: 1,
             name: "systemB",
+            gender: "f",
             load: Math.random(),
             confusionmatrix: [
                 [7293, 1224],
@@ -220,6 +225,7 @@ function refreshed_data() {
         "5": {
             id: 5,
             name: "systemF",
+            gender: "f",
             load: Math.random(),
             confusionmatrix: [
                 [7293, 1224],

@@ -3,6 +3,12 @@
     stroke: steelblue;
     stroke-width: 3.5px;
 }
+.gender_f {
+    fill: #FDD7E4;
+}
+.gender_m {
+    fill: #82CAFF;
+}
 #node_PHYSICAL .nodebox {
     stroke: beige;
 }
